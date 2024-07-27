@@ -1,0 +1,83 @@
+
+body {
+	/* Font-Family Declaration */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+/* Hover effect for navigation buttons */
+nav ul li a:hover {
+    color: blue; 
+}
+
+/* Element Selector */
+section {
+    flex: 3;
+    padding: 1em;
+    position: relative; /* Positioning example */
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-left: 1px solid #ccc;
+    margin-left: 20px;
+    float: right; /* Float property to position aside */
+}
+
+img.city-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Class Selector used at least twice */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#unique-element {
+    font-size: 1.2em;
+    color: red;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

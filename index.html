@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>This is CS50</h1>
-	<script src="index.js"></script>
-  </body>
+<head>
+    <title>California</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateEmail() {
+            var email1 = document.getElementById("email").value;
+            var email2 = document.getElementById("confirm-email").value;
+            if (email1 !== email2) {
+                alert("Email addresses do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- HEADER TAG -->
+    <header>
+        <h1>California</h1>
+    </header>
+
+    <!-- NAV TAG -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sacramento.html">Sacramento</a></li>
+            <li><a href="sandiego.html">San Diego</a></li>
+            <li><a href="losangeles.html">Los Angeles</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION TAG -->
+    <section id="content">
+	<!-- Aside tag is in the div -->
+        <div class="content-container">
+            <img src="california.png" alt="California Map" class="city-image">
+            
+            <aside>
+                <!-- Table with 3-6 columns and 3-6 rows -->
+                <table>
+                    <tr>
+                      <th>City</th>
+                      <th>County</th>
+                      <th>Population</th>
+                    </tr>
+                    <tr>
+                      <td>Sacramento</td>
+                      <td>Sacramento County</td>
+                      <td>524,943</td>
+                    </tr>
+                    <tr>
+                      <td>San Diego</td>
+                      <td>San Diego County</td>
+                      <td>1,386,932</td>
+                    </tr>
+                    <tr>
+                        <td>Los Angeles</td>
+                        <td>Los Angeles County</td>
+                        <td>3,979,576</td>
+                      </tr>
+                  </table>
+            </aside>
+        </div>
+        <h2>Generally bland facts about the state of California</h2>
+        <ul>
+            <li>California's population: 39,128,162 (2024)</li>
+            <li>California became a state in 1850</li>
+            <li>California has 840 miles of coastline touching the Pacific Ocean</li>
+            <li>California has 6 cities with more than 500,000 population</li>
+            <li>The average income for California in 2023 was 75,235</li>
+        </ul>
+
+        <h3 id="unique-element">References</h3>
+        <p>Wikipedia contributors. "California." Wikipedia, The Free Encyclopedia.</p>
+        <p><a href="https://en.wikipedia.org/wiki/California" target="_blank">California Wikipedia</a></p>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="form-section">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateEmail()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"><br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="confirm-email">Confirm Email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email"><br><br>
+
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" placeholder="Enter your question"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>(footer)2024 California</p>
+    </footer>
+</body>
 </html>
