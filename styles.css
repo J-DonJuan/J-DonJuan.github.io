@@ -55,13 +55,20 @@ aside {
     padding: 1em;
     border-left: 1px solid #ccc;
     margin-left: 20px;
-    float: right; /* Float property to position aside */
 }
 
 img.city-image {
     width: 100%;
     max-width: 600px;
     height: auto;
+}
+
+img.fun_fact {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    float: left;
+    padding-right: 20px;
 }
 
 /* Class Selector used at least twice */
